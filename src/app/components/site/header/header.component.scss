@@ -1,0 +1,41 @@
+@import "src/scss/_variables.scss";
+
+$primaryBackgroundColor   : 'transparent';
+$secondaryBackgroundColor : $white;
+$primaryTextColor  : $white;
+$secondaryTextColor  : $black;
+
+
+$backgroundColor: $primaryBackgroundColor;
+$textColor: $primaryTextColor;
+
+$inverseBackgroundColor: $secondaryBackgroundColor;
+$inverseTextColor: $secondaryTextColor;
+
+
+.navbar{
+    padding: 10px;
+    background: $blue;
+    // background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6));
+}
+.navbar-default, .navbar-brand, .navbar-brand:hover, .btn-default{
+    background-color: $white;
+    color: $black;
+}
+
+.navbar-brand{
+    font-size: 150%;
+}
+.btn-default{
+    box-shadow: 0px 0px 2px gray;
+    margin: 5px;
+    border-radius: 0px;
+}
+
+.btn-default:hover{
+    background-color: $blue;
+    color: white;
+    // border-color: $blue;
+    box-shadow: 0px 0px 5px $black;
+}
+

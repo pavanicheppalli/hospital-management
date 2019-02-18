@@ -1,0 +1,68 @@
+
+.doctor-registration-form{
+    color: white;
+    line-height: 180%;
+}
+
+.title{
+    font-size: 2em;
+    text-align: center;
+    color: white;
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+
+.active{
+    background-color: transparent;
+    border-bottom-color: white;
+    color: white;
+}
+
+a{
+  color:   white;
+}
+
+
+.input-title{
+    color: gray;
+    margin-top: 20px;
+}
+
+.text-input{
+    border: 1px solid rgb(158, 158, 158);
+    background-color: transparent;
+    color: black;
+    width: 100%;
+    line-height: 2.3em;
+    text-indent: 10px;
+}
+
+.card{
+    color: black;
+    margin: 0px;
+    padding: 20px;
+    .row{
+        margin-bottom: 10px;
+    }
+    .row:last-child{
+        margin: 20px;
+    }
+}
+
+
+.centered{
+    text-align: center;
+    position: relative;
+    top: calc(25% - 10px);
+}
+
+
+.custom-file{
+    margin: 20px;
+}
+
+
+.select-input{
+    width: 100%;
+    color: black;
+}

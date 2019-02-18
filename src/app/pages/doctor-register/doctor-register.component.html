@@ -1,0 +1,83 @@
+<app-header></app-header>
+
+<div class="title"> Doctor Registration </div>
+
+<div class="container doctor-registration-form">
+  <ngb-tabset activeId="2">
+    <ngb-tab title="General" id="1" >
+      <ng-template ngbTabContent>
+        <div class="card">
+          <div class="row">
+            <div class="col-md-6">
+              <p class="input-title">Full Name</p>
+              <input class="text-input" type="text" [(ngModel)]="fullName" />
+              <p class="input-title">Gender</p>
+              <ng-multiselect-dropdown [placeholder]="'Select Gender'" [data]="genderOptionsList" [(ngModel)]="selectedGender"
+                [settings]="genderDropDownSettings">
+              </ng-multiselect-dropdown>
+              <!-- <input class="text-input" type="text" /> -->
+              <p class="input-title">Known Languages</p>
+              <ng-multiselect-dropdown [placeholder]="'Select Language'" [data]="languageOptionsList" [(ngModel)]="selectedLanguages"
+                [settings]="languageDropDownSettings">
+              </ng-multiselect-dropdown>
+              <p class="input-title">Contact Number</p>
+              <input class="text-input" type="text" [(ngModel)]="contactNumber" />
+            </div>
+            <div class="col-md-3   offset-md-1">
+              <div class="centered">
+                <i class="fas fa-user fa-8x"></i>
+                <br />
+                <div class="custom-file">
+                  <input type="file" class="custom-file-input" id="customFile">
+                  <label class="custom-file-label" for="customFile">Choose file</label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-9"></div>
+            <div class="col-3">
+              <div class="btn btn-block btn-primary float-right btn-default">
+                Next
+              </div>
+            </div>
+          </div>
+        </div>
+      </ng-template>
+    </ngb-tab>
+    <ngb-tab title="Location" id="2">
+      <ng-template ngbTabContent>
+          <div class="card">
+              <div class="row">
+                <div class="col-md-6">
+                    <p class="input-title">PinCode</p>
+                    <input class="text-input" type="text" [(ngModel)]="fullName" />
+                </div>
+                <div class="col-md-3   offset-md-1">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-9"></div>
+                <div class="col-3">
+                  <div class="btn btn-block btn-primary float-right btn-default">
+                    Next
+                  </div>
+                </div>
+              </div>
+            </div>
+      </ng-template>
+    </ngb-tab>
+    <ngb-tab title="Education" id="3">
+      <ng-template ngbTabContent>
+      </ng-template>
+    </ngb-tab>
+    <ngb-tab title="Experience" id="4">
+      <ng-template ngbTabContent>
+      </ng-template>
+    </ngb-tab>
+    <ngb-tab title="Certificates" id="5">
+      <ng-template ngbTabContent>
+      </ng-template>
+    </ngb-tab>
+  </ngb-tabset>
+</div>
